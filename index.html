@@ -1,2 +1,119 @@
-<h1>This is my homepage</h1>
-My link-in-bio
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Link in Bio</title>
+  <style>
+  html {
+  min-height: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: linear-gradient(
+    180deg,
+    rgba(230, 81, 0, 1),
+    rgba(255, 183, 77, 1)
+  );
+  color: rgba(194, 218, 250, 1);
+  font-family: "Impact";
+}
+
+  .main-container {
+    max-width: 640px;
+    margin: auto;
+  }
+
+  .image-row {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .avatar-image {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 128px;
+  }
+
+  .name-row {
+    font-family: "Georgia";
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgba(194, 218, 250, 1);
+  }
+
+  .social-icons-row {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .links-row .item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .thumbnail {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    object-fit: cover;
+  }
+
+  .link-text {
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(194, 218, 250, 1);
+    font-weight: 600;
+  }
+
+  .item {
+    background-color: rgba(5, 52, 118, 0.8);
+    border-radius: 1000px;
+    padding: 10px 20px;
+    box-shadow: 4px 4px 12px 0px rgba(5, 52, 118, 0.5);
+    transition: background 0.3s ease;
+  }
+
+  .item:hover {
+    background-color: rgba(66, 98, 226, 0.9);
+  }
+</style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+</head>
+<body>
+  <div class="main-container">
+
+    <div class="image-row">
+      <img class="avatar-image" src="https://via.placeholder.com/128" alt="Jake Okwubanego headshot">
+    </div>
+
+    <div class="name-row">
+      Jake Okwubanego
+    </div>
+
+    <div class="social-icons-row">
+      <a href="https://www.instagram.com/jokwubanego/" target="_blank" class="link-text">Instagram <i class="fa-brands fa-instagram"></i> </a>
+      <a href="https://www.linkedin.com/in/jake-okwubanego/" target="_blank" class="link-text">LinkedIn <i class="fa-brands fa-linkedin"></i> </a>
+      <a href="https://letterboxd.com/jokwuban/?fbclid=PAZXh0bgNhZW0CMTEAAadA7IjlOryeKCStnIVTi37odhX1wYiMtUYkagz_-Bz9HilEy4lE7P4WjxtGKw_aem_ujUiiv6vAFQCFUFMliXikg" target="_blank" class="link-text">Letterboxd <i class="fa-solid fa-film"></i> </a>
+    </div>
+
+    <div class="links-row">
+      <div class="item">
+        <img class="thumbnail" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm9fFQoOAqJ4DMPGeTBrhBl5fvV7zkyIYfcA&s" alt="Substack logo">
+        <a target="_blank" href="https://substack.com/@jake567810?utm_source=user-menu" class="link-text">
+          My Substack
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
